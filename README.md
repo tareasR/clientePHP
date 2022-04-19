@@ -4,7 +4,7 @@ Para correr PHP se usa la imagen [php:apache](https://hub.docker.com/layers/php/
 
 El módulo soap.so se generó empleando el script [docker-php-extension-installer](https://github.com/mlocati/docker-php-extension-installer), ejecutando:
 <pre>
-RUN curl -sSLf \
+curl -sSLf \
         -o /usr/local/bin/install-php-extensions \
         https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions && \
     chmod +x /usr/local/bin/install-php-extensions && \
