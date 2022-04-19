@@ -1,11 +1,9 @@
 version: '3.3'
- services:
+services:
   clientePHP:
     image: php:apache
-    networks:
-    - mired
     volumes:
-    - ./funcionsaludar.php:/root/sitio:/var/www/html/index.php
+    - ./funcionsaludar.php:/var/www/html/index.php
     - ./soap.ini:/usr/local/etc/php/conf.d/soap.ini        
     - ./soap.so:/usr/local//lib/php/extensions/no-debug-non-zts-20210902/soap.so 
     ports:
